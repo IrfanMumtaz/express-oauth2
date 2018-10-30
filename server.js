@@ -18,8 +18,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 APIController = require("./controllers/users");
 
 
-app.get("/api/v1/users", APIController.users);
-app.get("/api/v1/user/:id", APIController.user);
+app.get("/api/v1/users/view", APIController.index);
+app.get("/api/v1/users/view/:id", APIController.view);
+app.post("/api/v1/users/store/", APIController.store);
+app.put("/api/v1/users/update/:id", APIController.update);
+app.delete("/api/v1/users/delete/:id", APIController.delete);
+
 
 app.get("*", (req, res) =>{
     res.json("This app is for api use only, api host is http://localhost:8000/api/v1, to check api is working or not call http://localhost/api/v1/users to check users list");
