@@ -1,0 +1,16 @@
+{
+  "name": "roshnirides",
+  "version": "1.0.0",
+  "description": "Roshni Rides API with oAuth2",
+  "main": "server.js",
+  "scripts": {
+    "test": "no"
+  },
+  "author": "Irfan Mumtaz",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4"
+  }
+}
